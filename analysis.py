@@ -95,7 +95,7 @@ def cross_model_similarity(df1: pd.DataFrame, df2: pd.DataFrame) -> dict:
 def compute_similarity_stats(df_model: pd.DataFrame) -> dict:
     """
     Within-class and between-class cosine similarity statistics.
-    Used for Table 6.
+    Used for Table 5.
     """
     feature_cols = get_feature_columns(df_model)
 
