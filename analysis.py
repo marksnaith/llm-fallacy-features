@@ -49,6 +49,9 @@ def feature_activation_stats(df: pd.DataFrame):
 
 
 def pearson_correlation(df1: pd.DataFrame, df2: pd.DataFrame) -> float:
+    """
+    Pearson Correlation determines cross-model corpus-level agreement
+    """
     feature_cols = get_feature_columns(df1)
 
     mean1 = df1[feature_cols].mean()
