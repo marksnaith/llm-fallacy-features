@@ -33,7 +33,7 @@ To reproduce the full pipeline from the raw input data:
 2. The input examples used in this paper are drawn from 
    `data/fallacy_second_version.csv` in that repository, filtered 
    to the Appeal to Fear and Popular Opinion subcategories
-3. Use the prompts in `prompts/` to query each model with the fallacious 
+3. Use the prompt in `prompt/` to query each model with the fallacious 
    argument examples one-by-one, replacing the `[[text]]` placeholder with the text of the argument. Each model returns a JSON object containing 
    feature scores as specified in the prompt
 4. Convert the JSON responses to CSV format. The `text`, `fallacy`, 
