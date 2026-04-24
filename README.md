@@ -10,7 +10,7 @@ with the paper:
 
 ## Contents
 
-- `prompts/` — feature extraction prompts used to query each model
+- `prompt/` — feature extraction prompt used to query each model
 - `data/` — output CSV files containing feature vectors for each model
 - `analysis.py` — analysis script reproducing all reported results
 - `requirements.txt` — Python dependencies
