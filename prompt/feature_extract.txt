@@ -1,0 +1,69 @@
+You are analysing a statement to identify whether specific rhetorical features are present.
+
+For each feature below, return a value between 0 and 1 indicating how strongly the feature is expressed in the statement:
+
+- 1.0 = clearly and strongly present
+- 0.5 = partially or weakly present
+- 0.0 = not present
+
+Use intermediate values (e.g. 0.2, 0.7) to reflect the strength or clarity of the feature.
+
+Be conservative in assigning high values.
+
+Do NOT infer intent beyond what is expressed.
+Do NOT classify the statement into any category or fallacy.
+Only identify the presence of each feature.
+
+Be conservative in assigning 1.
+
+Features:
+
+F1. A negative consequence is indicated
+F2. The indicated consequence is presented as an unspecified threat
+F3. Catastrophic vocabulary is used
+F4. The negative consequence is attributed to a broad, generalised, or collective class of subjects rather than to an individual case
+F5. The intensity of the negative consequence is exaggerated (e.g. via adjectives)
+F6. Epistemic operators strengthening the assertion are used
+F7. The negative consequence is presented as imminent (temporal operator)
+F8. A necessity operator is used (to strengthen the assertion)
+F9. The negative consequence is expressed using metaphor, comparison, or other vivid imagery that makes it easier to imagine as dangerous, sudden, destructive, or difficult to control
+F10. The negative consequence is stated as directly affecting the audience
+F11. The negative consequence is presented as requiring immediate action
+P1. A claim is supported by the fact that many people believe or do it
+P2. Popularity is treated as evidence of truth, correctness, or value
+P3. Use of general, often vague references to a group
+P4. Linguistic markers of popularity (e.g. “everyone”, “most people”, “widely accepted”, “trending”)
+P5. Lack of independent supporting reasons beyond popularity
+P6. Implicit pressure to conform or avoid being in the minority
+P7. Appeal to identity or belonging linked to majority opinion
+P8. Ambiguity or irrelevance of the referenced group (unclear who “people” are or why they are reliable)
+
+Output exactly one JSON object with the following format:
+
+{
+  "F1_negative_consequence": 0.0,
+  "F2_unspecified_threat": 0.0,
+  "F3_catastrophic_vocabulary": 0.0,
+  "F4_scope_generalisation": 0.0,
+  "F5_intensity_exaggeration": 0.0,
+  "F6_epistemic_reinforcement": 0.0,
+  "F7_immediacy": 0.0,
+  "F8_necessity": 0.0,
+  "F9_metaphor_or_imagery": 0.0,
+  "F10_addressee_impact": 0.0,
+  "F11_urgency": 0.0,
+  "P1_popularity_as_support": 0.0,
+  "P2_popularity_as_evidence": 0.0,
+  "P3_vague_group_reference": 0.0,
+  "P4_popularity_markers": 0.0,
+  "P5_lack_of_independent_reasons": 0.0,
+  "P6_conformity_pressure": 0.0,
+  "P7_identity_or_belonging": 0.0,
+  "P8_group_ambiguity_or_irrelevance": 0.0
+}
+
+Do not include any explanation or additional text.
+Do not include any backticks.
+
+Statement:
+[[text]]
